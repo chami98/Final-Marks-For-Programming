@@ -39,7 +39,7 @@ namespace Final_Marks_For_Programming
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.clear = new System.Windows.Forms.Button();
-            this.studentName = new System.Windows.Forms.TextBox();
+            this.InputStudentName = new System.Windows.Forms.TextBox();
             this.inputMajorTest1 = new System.Windows.Forms.TextBox();
             this.inputClassTest = new System.Windows.Forms.TextBox();
             this.inputExamMark = new System.Windows.Forms.TextBox();
@@ -139,13 +139,14 @@ namespace Final_Marks_For_Programming
             this.clear.TabIndex = 9;
             this.clear.Text = "Clear";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // studentName
+            // InputStudentName
             // 
-            this.studentName.Location = new System.Drawing.Point(169, 22);
-            this.studentName.Name = "studentName";
-            this.studentName.Size = new System.Drawing.Size(242, 22);
-            this.studentName.TabIndex = 10;
+            this.InputStudentName.Location = new System.Drawing.Point(169, 22);
+            this.InputStudentName.Name = "InputStudentName";
+            this.InputStudentName.Size = new System.Drawing.Size(242, 22);
+            this.InputStudentName.TabIndex = 10;
             // 
             // inputMajorTest1
             // 
@@ -206,7 +207,7 @@ namespace Final_Marks_For_Programming
             this.Controls.Add(this.inputExamMark);
             this.Controls.Add(this.inputClassTest);
             this.Controls.Add(this.inputMajorTest1);
-            this.Controls.Add(this.studentName);
+            this.Controls.Add(this.InputStudentName);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -236,7 +237,7 @@ namespace Final_Marks_For_Programming
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.TextBox studentName;
+        private System.Windows.Forms.TextBox InputStudentName;
         private System.Windows.Forms.TextBox inputMajorTest1;
         private System.Windows.Forms.TextBox inputClassTest;
         private System.Windows.Forms.TextBox inputExamMark;

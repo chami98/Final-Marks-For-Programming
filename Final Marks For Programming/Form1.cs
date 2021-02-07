@@ -42,5 +42,14 @@ namespace Final_Marks_For_Programming
             //Display finalMark
 
         }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            InputStudentName.Clear();
+            inputMajorTest1.Clear();
+            inputMajorTest2.Clear();
+            inputClassTest.Clear();
+            inputExamMark.Clear();
+        }
     }
 }
