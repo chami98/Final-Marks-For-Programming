@@ -44,6 +44,8 @@ namespace Final_Marks_For_Programming
             this.classTest = new System.Windows.Forms.TextBox();
             this.examMark = new System.Windows.Forms.TextBox();
             this.majorTest2 = new System.Windows.Forms.TextBox();
+            this.finalMark = new System.Windows.Forms.Label();
+            this.Grade = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -172,11 +174,33 @@ namespace Final_Marks_For_Programming
             this.majorTest2.Size = new System.Drawing.Size(50, 22);
             this.majorTest2.TabIndex = 14;
             // 
+            // finalMark
+            // 
+            this.finalMark.AutoSize = true;
+            this.finalMark.ForeColor = System.Drawing.Color.Red;
+            this.finalMark.Location = new System.Drawing.Point(145, 283);
+            this.finalMark.Name = "finalMark";
+            this.finalMark.Size = new System.Drawing.Size(36, 17);
+            this.finalMark.TabIndex = 15;
+            this.finalMark.Text = "0.00\r\n";
+            // 
+            // Grade
+            // 
+            this.Grade.AutoSize = true;
+            this.Grade.ForeColor = System.Drawing.Color.Red;
+            this.Grade.Location = new System.Drawing.Point(145, 333);
+            this.Grade.Name = "Grade";
+            this.Grade.Size = new System.Drawing.Size(31, 17);
+            this.Grade.TabIndex = 16;
+            this.Grade.Text = "N/A";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 456);
+            this.Controls.Add(this.Grade);
+            this.Controls.Add(this.finalMark);
             this.Controls.Add(this.majorTest2);
             this.Controls.Add(this.examMark);
             this.Controls.Add(this.classTest);
@@ -216,6 +240,8 @@ namespace Final_Marks_For_Programming
         private System.Windows.Forms.TextBox classTest;
         private System.Windows.Forms.TextBox examMark;
         private System.Windows.Forms.TextBox majorTest2;
+        private System.Windows.Forms.Label finalMark;
+        private System.Windows.Forms.Label Grade;
     }
 }
 
