@@ -35,15 +35,15 @@ namespace Final_Marks_For_Programming
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.calculateFinalGrade = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
             this.studentName = new System.Windows.Forms.TextBox();
             this.majorTest1 = new System.Windows.Forms.TextBox();
             this.classTest = new System.Windows.Forms.TextBox();
             this.examMark = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.majorTest2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -101,14 +101,14 @@ namespace Final_Marks_For_Programming
             this.label6.TabIndex = 5;
             this.label6.Text = "Major Test 2";
             // 
-            // button1
+            // calculateFinalGrade
             // 
-            this.button1.Location = new System.Drawing.Point(270, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Calculate Final Grade";
-            this.button1.UseVisualStyleBackColor = true;
+            this.calculateFinalGrade.Location = new System.Drawing.Point(270, 217);
+            this.calculateFinalGrade.Name = "calculateFinalGrade";
+            this.calculateFinalGrade.Size = new System.Drawing.Size(176, 23);
+            this.calculateFinalGrade.TabIndex = 6;
+            this.calculateFinalGrade.Text = "Calculate Final Grade";
+            this.calculateFinalGrade.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -128,14 +128,14 @@ namespace Final_Marks_For_Programming
             this.label8.TabIndex = 8;
             this.label8.Text = "Grade";
             // 
-            // button2
+            // clear
             // 
-            this.button2.Location = new System.Drawing.Point(313, 327);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.clear.Location = new System.Drawing.Point(313, 327);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(91, 23);
+            this.clear.TabIndex = 9;
+            this.clear.Text = "Clear";
+            this.clear.UseVisualStyleBackColor = true;
             // 
             // studentName
             // 
@@ -165,27 +165,27 @@ namespace Final_Marks_For_Programming
             this.examMark.Size = new System.Drawing.Size(50, 22);
             this.examMark.TabIndex = 13;
             // 
-            // textBox1
+            // majorTest2
             // 
-            this.textBox1.Location = new System.Drawing.Point(396, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(50, 22);
-            this.textBox1.TabIndex = 14;
+            this.majorTest2.Location = new System.Drawing.Point(396, 137);
+            this.majorTest2.Name = "majorTest2";
+            this.majorTest2.Size = new System.Drawing.Size(50, 22);
+            this.majorTest2.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 456);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.majorTest2);
             this.Controls.Add(this.examMark);
             this.Controls.Add(this.classTest);
             this.Controls.Add(this.majorTest1);
             this.Controls.Add(this.studentName);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.calculateFinalGrade);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -207,15 +207,15 @@ namespace Final_Marks_For_Programming
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button calculateFinalGrade;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clear;
         private System.Windows.Forms.TextBox studentName;
         private System.Windows.Forms.TextBox majorTest1;
         private System.Windows.Forms.TextBox classTest;
         private System.Windows.Forms.TextBox examMark;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox majorTest2;
     }
 }
 
