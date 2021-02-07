@@ -40,12 +40,12 @@ namespace Final_Marks_For_Programming
             this.label8 = new System.Windows.Forms.Label();
             this.clear = new System.Windows.Forms.Button();
             this.studentName = new System.Windows.Forms.TextBox();
-            this.majorTest1 = new System.Windows.Forms.TextBox();
-            this.classTest = new System.Windows.Forms.TextBox();
-            this.examMark = new System.Windows.Forms.TextBox();
-            this.majorTest2 = new System.Windows.Forms.TextBox();
-            this.finalMark = new System.Windows.Forms.Label();
-            this.Grade = new System.Windows.Forms.Label();
+            this.inputMajorTest1 = new System.Windows.Forms.TextBox();
+            this.inputClassTest = new System.Windows.Forms.TextBox();
+            this.inputExamMark = new System.Windows.Forms.TextBox();
+            this.inputMajorTest2 = new System.Windows.Forms.TextBox();
+            this.lblFinalMark = new System.Windows.Forms.Label();
+            this.lblGrade = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -111,6 +111,7 @@ namespace Final_Marks_For_Programming
             this.calculateFinalGrade.TabIndex = 6;
             this.calculateFinalGrade.Text = "Calculate Final Grade";
             this.calculateFinalGrade.UseVisualStyleBackColor = true;
+            this.calculateFinalGrade.Click += new System.EventHandler(this.calculateFinalGrade_Click);
             // 
             // label7
             // 
@@ -146,65 +147,65 @@ namespace Final_Marks_For_Programming
             this.studentName.Size = new System.Drawing.Size(242, 22);
             this.studentName.TabIndex = 10;
             // 
-            // majorTest1
+            // inputMajorTest1
             // 
-            this.majorTest1.Location = new System.Drawing.Point(148, 137);
-            this.majorTest1.Name = "majorTest1";
-            this.majorTest1.Size = new System.Drawing.Size(50, 22);
-            this.majorTest1.TabIndex = 11;
+            this.inputMajorTest1.Location = new System.Drawing.Point(148, 137);
+            this.inputMajorTest1.Name = "inputMajorTest1";
+            this.inputMajorTest1.Size = new System.Drawing.Size(50, 22);
+            this.inputMajorTest1.TabIndex = 11;
             // 
-            // classTest
+            // inputClassTest
             // 
-            this.classTest.Location = new System.Drawing.Point(148, 178);
-            this.classTest.Name = "classTest";
-            this.classTest.Size = new System.Drawing.Size(50, 22);
-            this.classTest.TabIndex = 12;
+            this.inputClassTest.Location = new System.Drawing.Point(148, 178);
+            this.inputClassTest.Name = "inputClassTest";
+            this.inputClassTest.Size = new System.Drawing.Size(50, 22);
+            this.inputClassTest.TabIndex = 12;
             // 
-            // examMark
+            // inputExamMark
             // 
-            this.examMark.Location = new System.Drawing.Point(148, 217);
-            this.examMark.Name = "examMark";
-            this.examMark.Size = new System.Drawing.Size(50, 22);
-            this.examMark.TabIndex = 13;
+            this.inputExamMark.Location = new System.Drawing.Point(148, 217);
+            this.inputExamMark.Name = "inputExamMark";
+            this.inputExamMark.Size = new System.Drawing.Size(50, 22);
+            this.inputExamMark.TabIndex = 13;
             // 
-            // majorTest2
+            // inputMajorTest2
             // 
-            this.majorTest2.Location = new System.Drawing.Point(396, 137);
-            this.majorTest2.Name = "majorTest2";
-            this.majorTest2.Size = new System.Drawing.Size(50, 22);
-            this.majorTest2.TabIndex = 14;
+            this.inputMajorTest2.Location = new System.Drawing.Point(396, 137);
+            this.inputMajorTest2.Name = "inputMajorTest2";
+            this.inputMajorTest2.Size = new System.Drawing.Size(50, 22);
+            this.inputMajorTest2.TabIndex = 14;
             // 
-            // finalMark
+            // lblFinalMark
             // 
-            this.finalMark.AutoSize = true;
-            this.finalMark.ForeColor = System.Drawing.Color.Red;
-            this.finalMark.Location = new System.Drawing.Point(145, 283);
-            this.finalMark.Name = "finalMark";
-            this.finalMark.Size = new System.Drawing.Size(36, 17);
-            this.finalMark.TabIndex = 15;
-            this.finalMark.Text = "0.00\r\n";
+            this.lblFinalMark.AutoSize = true;
+            this.lblFinalMark.ForeColor = System.Drawing.Color.Red;
+            this.lblFinalMark.Location = new System.Drawing.Point(145, 283);
+            this.lblFinalMark.Name = "lblFinalMark";
+            this.lblFinalMark.Size = new System.Drawing.Size(36, 17);
+            this.lblFinalMark.TabIndex = 15;
+            this.lblFinalMark.Text = "0.00\r\n";
             // 
-            // Grade
+            // lblGrade
             // 
-            this.Grade.AutoSize = true;
-            this.Grade.ForeColor = System.Drawing.Color.Red;
-            this.Grade.Location = new System.Drawing.Point(145, 333);
-            this.Grade.Name = "Grade";
-            this.Grade.Size = new System.Drawing.Size(31, 17);
-            this.Grade.TabIndex = 16;
-            this.Grade.Text = "N/A";
+            this.lblGrade.AutoSize = true;
+            this.lblGrade.ForeColor = System.Drawing.Color.Red;
+            this.lblGrade.Location = new System.Drawing.Point(145, 333);
+            this.lblGrade.Name = "lblGrade";
+            this.lblGrade.Size = new System.Drawing.Size(31, 17);
+            this.lblGrade.TabIndex = 16;
+            this.lblGrade.Text = "N/A";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 456);
-            this.Controls.Add(this.Grade);
-            this.Controls.Add(this.finalMark);
-            this.Controls.Add(this.majorTest2);
-            this.Controls.Add(this.examMark);
-            this.Controls.Add(this.classTest);
-            this.Controls.Add(this.majorTest1);
+            this.Controls.Add(this.lblGrade);
+            this.Controls.Add(this.lblFinalMark);
+            this.Controls.Add(this.inputMajorTest2);
+            this.Controls.Add(this.inputExamMark);
+            this.Controls.Add(this.inputClassTest);
+            this.Controls.Add(this.inputMajorTest1);
             this.Controls.Add(this.studentName);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.label8);
@@ -236,12 +237,12 @@ namespace Final_Marks_For_Programming
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.TextBox studentName;
-        private System.Windows.Forms.TextBox majorTest1;
-        private System.Windows.Forms.TextBox classTest;
-        private System.Windows.Forms.TextBox examMark;
-        private System.Windows.Forms.TextBox majorTest2;
-        private System.Windows.Forms.Label finalMark;
-        private System.Windows.Forms.Label Grade;
+        private System.Windows.Forms.TextBox inputMajorTest1;
+        private System.Windows.Forms.TextBox inputClassTest;
+        private System.Windows.Forms.TextBox inputExamMark;
+        private System.Windows.Forms.TextBox inputMajorTest2;
+        private System.Windows.Forms.Label lblFinalMark;
+        private System.Windows.Forms.Label lblGrade;
     }
 }
 

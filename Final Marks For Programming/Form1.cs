@@ -21,5 +21,23 @@ namespace Final_Marks_For_Programming
         {
 
         }
+
+        private void calculateFinalGrade_Click(object sender, EventArgs e)
+        {
+            double majorTest1 = double.Parse(inputMajorTest1.Text);
+            double majorTest2 = double.Parse(inputMajorTest2.Text);
+            double classTest = double.Parse(inputClassTest.Text);
+            double examMark = double.Parse(inputExamMark.Text);
+
+            //Got all the inputs from the textboxes and assigned into the relevent varibles.
+
+            Calculate obj = new Calculate();
+            double finalMark = obj.finalMark(majorTest1, majorTest2, classTest, examMark);
+            lblFinalMark.Text = finalMark.ToString();
+
+            //Created object of calculate class and passed values to the final mark method
+            //Display finalMark
+
+        }
     }
 }
