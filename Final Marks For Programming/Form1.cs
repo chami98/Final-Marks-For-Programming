@@ -50,6 +50,8 @@ namespace Final_Marks_For_Programming
             inputMajorTest2.Clear();
             inputClassTest.Clear();
             inputExamMark.Clear();
+
+            //clear all the input text
         }
     }
 }
