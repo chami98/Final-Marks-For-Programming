@@ -35,6 +35,9 @@ namespace Final_Marks_For_Programming
             double finalMark = obj.finalMark(majorTest1, majorTest2, classTest, examMark);
             lblFinalMark.Text = finalMark.ToString();
 
+            String grade = obj.grade();
+            lblGrade.Text = grade;
+
             //Created object of calculate class and passed values to the final mark method
             //Display finalMark
 
