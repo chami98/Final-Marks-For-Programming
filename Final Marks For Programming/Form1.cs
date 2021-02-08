@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final_Marks_For_Programming
 {
-    public partial class Form1 : Form
+    public partial class Final_marks_for_programming : Form
     {
-        public Form1()
+        public Final_marks_for_programming()
         {
             InitializeComponent();
         }

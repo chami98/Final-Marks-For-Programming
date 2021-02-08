@@ -1,7 +1,7 @@
 ﻿
 namespace Final_Marks_For_Programming
 {
-    partial class Form1
+    partial class Final_marks_for_programming
     {
         /// <summary>
         /// Required designer variable.
@@ -114,9 +114,9 @@ namespace Final_Marks_For_Programming
             // calculateFinalGrade
             // 
             this.calculateFinalGrade.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateFinalGrade.Location = new System.Drawing.Point(249, 98);
+            this.calculateFinalGrade.Location = new System.Drawing.Point(225, 101);
             this.calculateFinalGrade.Name = "calculateFinalGrade";
-            this.calculateFinalGrade.Size = new System.Drawing.Size(157, 33);
+            this.calculateFinalGrade.Size = new System.Drawing.Size(198, 33);
             this.calculateFinalGrade.TabIndex = 6;
             this.calculateFinalGrade.Text = "Calculate Final Grade";
             this.calculateFinalGrade.UseVisualStyleBackColor = true;
@@ -227,8 +227,9 @@ namespace Final_Marks_For_Programming
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
-            // Form1
+            // Final_marks_for_programming
             // 
+            this.AcceptButton = this.calculateFinalGrade;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 414);
@@ -241,7 +242,7 @@ namespace Final_Marks_For_Programming
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Final_marks_for_programming";
             this.Text = "Final Marks For Programming";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

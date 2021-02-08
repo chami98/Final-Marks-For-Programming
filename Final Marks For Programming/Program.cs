@@ -16,7 +16,7 @@ namespace Final_Marks_For_Programming
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Final_marks_for_programming());
         }
     }
 }
