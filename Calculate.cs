@@ -13,7 +13,7 @@ namespace Final_Marks_For_Programming
         double finalMarkValue;
         public double finalMark(double majorTest1, double majorTest2 , double classTest, double examMark)
         {
-            finalMarkValue = (majorTest1) * (15)/ (100) + (majorTest2) * (20) / (100) + (classTest )* (15) /( 100) + (examMark )* (50) / (100);
+            finalMarkValue = (majorTest1) * (15)/ (100) + (majorTest2) * (20) / (100) + (classTest) * (15) /( 100) + (examMark )* (50) / (100);
             return finalMarkValue;
         }
 

@@ -24,34 +24,66 @@ namespace Final_Marks_For_Programming
 
         private void calculateFinalGrade_Click(object sender, EventArgs e)
         {
-            double majorTest1 = double.Parse(inputMajorTest1.Text);
-            double majorTest2 = double.Parse(inputMajorTest2.Text);
-            double classTest = double.Parse(inputClassTest.Text);
-            double examMark = double.Parse(inputExamMark.Text);
 
-            //Got all the inputs from the textboxes and assigned into the relevent varibles.
+            try
+            {
+                double majorTest1 = double.Parse(inputMajorTest1.Text);
+                double majorTest2 = double.Parse(inputMajorTest2.Text);
+                double classTest1 = double.Parse(inputClassTest1.Text);
+                double classTest2 = double.Parse(inputClassTest2.Text);
+                double examMark = double.Parse(inputExamMark.Text);
 
-            Calculate obj = new Calculate();
-            double finalMark = obj.finalMark(majorTest1, majorTest2, classTest, examMark);
-            lblFinalMark.Text = finalMark.ToString();
 
-            String grade = obj.grade();
-            lblGrade.Text = grade;
+                //Got all the inputs from the textboxes and assigned into the relevent varibles.
 
-            //Created object of calculate class and passed values to the final mark method
-            //Display finalMark
+                Student studentObject = new Student(majorTest1, majorTest2, classTest1, classTest2, examMark);
+
+                double finalMark = studentObject.finalMark();
+                String grade = studentObject.grade();
+                lblAnswer.Text = "The Final Mark of the student is " + finalMark.ToString() + "%"+ "\n" + "The result is " + grade;
+
+                
+
+                //Created object of calculate class and passed values to the final mark method
+                //Display finalMark
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please Enter All Values" , "Error" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+           
+
 
         }
 
         private void clear_Click(object sender, EventArgs e)
         {
-            InputStudentName.Clear();
+            
             inputMajorTest1.Clear();
             inputMajorTest2.Clear();
-            inputClassTest.Clear();
+            inputClassTest1.Clear();
             inputExamMark.Clear();
+            lblAnswer.Text = "";
+            inputClassTest2.Clear();
+            
 
             //clear all the input text
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputMajorTest1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
